@@ -78,6 +78,7 @@ const transactions = [
 ]
 let userInput = 'John Doe';
 const filterTransaction = (arr, transactions, inputValue) => {
+    const alert = "user not found"
     let length = arr.length;
     let length2 = transactions.length;
     for (let i = 0; i < length; i++) {
@@ -87,9 +88,9 @@ const filterTransaction = (arr, transactions, inputValue) => {
                 if (arr[i].id === transactions[j].userId) {
                     return transactions[j]
                 }
-                // else {
-                //     alert("transaction not made")
-                // }
+                else {
+                    alert("transaction not made")
+                }
             }
         }
     }
